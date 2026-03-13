@@ -327,7 +327,6 @@ services:
     env_file: .env
     networks:
       - ragflow
-      - dokploy-network
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -415,5 +414,3 @@ volumes:
 networks:
   ragflow:
     driver: bridge
-  dokploy-network:
-    external: true
