@@ -132,3 +132,8 @@ services:
   #           - driver: nvidia
   #             count: all
   #             capabilities: [gpu]
+
+
+networks:
+  dokploy-network:
+    external: true
