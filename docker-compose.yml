@@ -221,7 +221,7 @@ services:
     ports:
       - ${REDIS_PORT}:6379
     volumes:
-      - redis_data:/data
+      - redis_data_new:/data
     networks:
       - ragflow
     restart: unless-stopped
@@ -404,7 +404,7 @@ volumes:
     driver: local
   minio_data:
     driver: local
-  redis_data:
+  redis_data_new:
     driver: local
   tei_data:
     driver: local
