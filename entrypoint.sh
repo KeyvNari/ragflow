@@ -2,6 +2,9 @@
 
 set -e
 
+# Ensure the logs directory exists (the host-mounted volume may be empty)
+mkdir -p /ragflow/logs
+
 # -----------------------------------------------------------------------------
 # Usage and command-line argument parsing
 # -----------------------------------------------------------------------------
