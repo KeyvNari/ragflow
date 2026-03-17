@@ -220,8 +220,8 @@ services:
     env_file: .env
     ports:
       - ${REDIS_PORT}:6379
-    volumes:
-      - redis_data_new_v3:/data
+    # volumes:
+    #   - redis_data_new_v3:/data
     networks:
       - ragflow
     restart: unless-stopped
