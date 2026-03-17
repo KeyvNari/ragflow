@@ -182,7 +182,7 @@ services:
     ports:
       - ${EXPOSE_MYSQL_PORT}:3306
     volumes:
-      - mysql_data_v3:/var/lib/mysql
+      - mysql_data_v4:/var/lib/mysql
       - ./init.sql:/data/application/init.sql
     networks:
       - ragflow
@@ -369,7 +369,7 @@ volumes:
     driver: local
   seekdb_data_v3:
     driver: local
-  mysql_data_v3:
+  mysql_data_v4:
     driver: local
   minio_data_v3:
     driver: local
